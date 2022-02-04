@@ -14,3 +14,5 @@ class Field:
 
     def get_coordinate(self, homeless):
         return self.homeless_coordinates[homeless]
+
+        """hola mundo"""
