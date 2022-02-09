@@ -34,3 +34,25 @@ class ModerateHomeless(Homeless):
         self.x += dx
         self.y += dy
         return [self.x, self.y]
+
+class LeftHomeless(Homeless):
+
+    def __init__(self, name):
+        super().__init__(name)
+    
+    def walk(self):
+        dx, dy = random.choice([(0,1), (0,-1), (1,0), (-5,0)])
+        self.x += dx
+        self.y += dy
+        return [self.x, self.y]
+
+class RightHomeless(Homeless):
+
+    def __init__(self, name):
+        super().__init__(name)
+    
+    def walk(self):
+        dx, dy = random.choice([(0,5), (0,-1), (5,0), (-1,0)])
+        self.x += dx
+        self.y += dy
+        return [self.x, self.y]
